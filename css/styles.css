@@ -1,0 +1,88 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+  }
+  
+  body {
+    width: 100%;
+    height: 100vw;
+    background-size: 100% 100%;
+
+    background-image: linear-gradient(
+      25deg,
+      hsl(290deg 89% 17%) 0%,
+      hsl(312deg 100% 21%) 4%,
+      hsl(325deg 100% 28%) 9%,
+      hsl(338deg 79% 39%) 13%,
+      hsl(354deg 60% 50%) 18%,
+      hsl(10deg 72% 54%) 23%,
+      hsl(24deg 82% 53%) 27%,
+      hsl(37deg 96% 47%) 32%,
+      hsl(48deg 100% 45%) 37%,
+      hsl(60deg 92% 45%) 42%,
+      hsl(46deg 100% 59%) 47%,
+      hsl(40deg 100% 66%) 52%,
+      hsl(32deg 100% 73%) 57%,
+      hsl(21deg 100% 79%) 63%,
+      hsl(5deg 100% 85%) 68%,
+      hsl(345deg 100% 88%) 74%,
+      hsl(327deg 100% 89%) 80%,
+      hsl(313deg 100% 91%) 87%,
+      hsl(303deg 100% 93%) 98%
+    );
+
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+
+    display: grid;
+    grid-template-columns: auto 600px auto;
+    grid-template-rows: 300px 150px auto;
+  }
+
+  .masterBoxIndex {
+    grid-column: 2;
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 33% 33% 33%;
+  }
+
+  @font-face {
+    font-family: conthraxFont;
+    src: url(../fonts/conthrax-sb.otf);
+  }
+
+  .textStyle {
+    grid-column: 1;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+    font-family:conthraxFont;
+    font-weight: 100;
+    color: rgb(27, 3, 43);
+    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+  }
+
+  h1 {
+    grid-row: 1;
+
+    font-size: 43px;    
+  }
+
+  h2 {
+    grid-row: 2;
+
+    font-size: 30px;
+  }
+
+  h3 {
+    grid-row: 3;
+
+    font-size: 36px;
+  }
