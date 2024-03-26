@@ -94,9 +94,7 @@
 
 
 const listaProductos = ["pan", "arroz", "fideos", "milanesas", "soda", "huevos"];
-
-let productos = 0;
     
 for (let i = 0; i < listaProductos.length; i++) {
-         console.log (listaProductos[i] + " esta en la lista.");
+         console.log (listaProductos[i] + " está en la lista.");
     };
