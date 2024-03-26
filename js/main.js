@@ -77,7 +77,8 @@ let sumaCalificaciones = 0; // Inicializa una variable para almacenar la suma de
 
 // Bucle for que recorre cada elemento del array calificaciones
 for (let i = 0; i < calificaciones.length; i++) {
-    sumaCalificaciones = sumaCalificaciones + calificaciones[i]; // Suma el valor del elemento actual al acumulador de la suma
+    sumaCalificaciones = sumaCalificaciones + calificaciones[i]
+    consologe.log([i]); // Suma el valor del elemento actual al acumulador de la suma
 }
 
 const promedio = sumaCalificaciones / calificaciones.length; // Calcula el promedio dividiendo la suma total por la cantidad de calificaciones
