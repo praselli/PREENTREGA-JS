@@ -131,7 +131,7 @@ const serieNumerica = [9, 23, 60, 4, 33, 27, 48, 50, 19, 7];
 
 // serieNumerica.forEach ((element) => console.log(element));
 
-for (let i = 1; i <= serieNumerica.length; i++) {
+for (let i = 0; i <= serieNumerica.length; i++) {
      console.log (i);
     
     };
