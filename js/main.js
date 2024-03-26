@@ -145,16 +145,8 @@ for (let i = 0; i < serieNumerica.length; i++) {
 console.log (numerosPares);
 console.log (numerosImpares);
 
-let totalNumerosPares = numerosPares.reduce(function (a, b) {
-    return a + b;
-  });
+// falta terminar!!!!!!!!!!
 
-let totalNumerosImpares = numerosImpares.reduce(function (a, b) {
-    return a + b;
-  });
-
-  console.log (totalNumerosPares);
-  console.log (totalNumerosImpares);
 
 //-------------------------------------------------------------------------------------------------------
 
