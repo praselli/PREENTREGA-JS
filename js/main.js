@@ -112,7 +112,7 @@
 
 // let numeroIngresado = parseInt ( prompt ("Ingrese un número:"));
 
-//  for (let i = 0; i <= 10; i++) {
+//  for (let i = 1; i <= 10; i++) {
 //     let resultado = i * numeroIngresado;
 //     console.log (i + " x " + numeroIngresado + " = " + resultado);
 //     };
@@ -127,7 +127,11 @@
 // Calcula la suma de todos los números pares y la suma de todos los números impares por separado.
 // Muestra los resultados en la consola.
 
+const serieNumerica = [9, 23, 60, 4, 33, 27, 48, 50, 19, 7];
 
+for (let i = 0; i <= serieNumerica.length; i++) {
+    console.log (i);
+   };
 
 
 //-------------------------------------------------------------------------------------------------------
