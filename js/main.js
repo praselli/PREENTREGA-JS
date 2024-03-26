@@ -133,8 +133,8 @@ const numerosPares = [];
 const numerosImpares = [];
 
 for (let i = 0; i <= serieNumerica.length; i++) {
-     console.log (i);
-     if (let esPar = i % 2 === 0); {
+   
+    if (let esPar = i % 2 === 0) {
         numerosPares.push (i);
         }
     else {
