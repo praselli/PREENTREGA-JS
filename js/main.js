@@ -93,8 +93,21 @@
 //     Muestra un mensaje para cada producto indicando que está en la lista de la compra.
 
 
-const listaProductos = ["pan", "arroz", "fideos", "milanesas", "soda", "huevos"];
+// const listaProductos = ["pan", "arroz", "fideos", "milanesas", "soda", "huevos"];
     
-for (let i = 0; i < listaProductos.length; i++) {
-         console.log (listaProductos[i] + " está en la lista.");
+// for (let i = 0; i < listaProductos.length; i++) {
+//          console.log (listaProductos[i] + " está en la lista.");
+//     };
+
+
+// Tabla de multiplicar:
+// Elije un número para generar su tabla de multiplicar.
+// Utiliza un bucle for para recorrer los números del 1 al 10.
+// Muestra en la consola el resultado de multiplicar el número elegido por cada número del 1 al 10.
+
+let numeroIngresado = parseInt ( prompt ("Ingrese un número:"));
+
+ for (let i = 0; i <= 10; i++) {
+    let resultado = i * numeroIngresado;
+    console.log (i + " x " + numeroIngresado + " = " + resultado);
     };
