@@ -145,11 +145,11 @@ for (let i = 0; i < serieNumerica.length; i++) {
 console.log (numerosPares);
 console.log (numerosImpares);
 
-const totalNumerosPares = numerosPares[i].reduce(function (a, b) {
+let totalNumerosPares = numerosPares[i].reduce(function (a, b) {
     return a + b;
   });
 
-const totalNumerosImpares = numerosImpares[i].reduce(function (a, b) {
+let totalNumerosImpares = numerosImpares[i].reduce(function (a, b) {
     return a + b;
   });
 
