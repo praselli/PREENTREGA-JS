@@ -134,7 +134,7 @@ const numerosImpares = [];
 
 for (let i = 0; i <= serieNumerica.length; i++) {
    
-    if (let esPar = i % 2 === 0) {
+    if (i % 2 === 0) {
         numerosPares.push (i);
         }
     else {
