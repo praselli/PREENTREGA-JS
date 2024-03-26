@@ -129,13 +129,21 @@
 
 const serieNumerica = [9, 23, 60, 4, 33, 27, 48, 50, 19, 7];
 
-// serieNumerica.forEach ((element) => console.log(element));
+const numerosPares = [];
+const numerosImpares = [];
 
 for (let i = 0; i <= serieNumerica.length; i++) {
      console.log (i);
-    
+     if (let esPar = i % 2 === 0); {
+        numerosPares.push (i);
+        }
+    else {
+        numerosImpares.push (i);
+    }
     };
 
+console.log (numerosPares);
+console.log (numerosImpares);
 
 //-------------------------------------------------------------------------------------------------------
 
