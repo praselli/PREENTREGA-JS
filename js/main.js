@@ -62,6 +62,7 @@
 // // Inicia el proceso de generación y muestra de contraseña.
 // generarYmostrarContrasenia();
 
+
 //--------------------------- PRACTICAS -----------------------------------------
 
 // Calculadora de promedio:
@@ -84,6 +85,7 @@
 
 // console.log("El promedio de las calificaciones es: " + promedio); // Muestra el promedio calculado en la consola
 
+
 //-------------------------------------------------------------------------------------------------------
 
 // Lista de la compra:
@@ -100,14 +102,77 @@
 //     };
 
 
+//-------------------------------------------------------------------------------------------------------
+
 // Tabla de multiplicar:
+
 // Elije un número para generar su tabla de multiplicar.
 // Utiliza un bucle for para recorrer los números del 1 al 10.
 // Muestra en la consola el resultado de multiplicar el número elegido por cada número del 1 al 10.
 
-let numeroIngresado = parseInt ( prompt ("Ingrese un número:"));
+// let numeroIngresado = parseInt ( prompt ("Ingrese un número:"));
 
- for (let i = 0; i <= 10; i++) {
-    let resultado = i * numeroIngresado;
-    console.log (i + " x " + numeroIngresado + " = " + resultado);
-    };
+//  for (let i = 0; i <= 10; i++) {
+//     let resultado = i * numeroIngresado;
+//     console.log (i + " x " + numeroIngresado + " = " + resultado);
+//     };
+
+
+//-------------------------------------------------------------------------------------------------------
+
+// Suma de números pares e impares:
+
+// Crea un array con una serie de números.
+// Utiliza un bucle for para recorrer cada número del array.
+// Calcula la suma de todos los números pares y la suma de todos los números impares por separado.
+// Muestra los resultados en la consola.
+
+
+
+
+//-------------------------------------------------------------------------------------------------------
+
+// Cálculo de la potencia de un número:
+
+// Pide al usuario que ingrese un número.
+// Utiliza un bucle for para calcular la potencia de ese número elevado a la potencia de los números del 1 al 10.
+// Muestra los resultados en la consola.
+
+
+
+
+//-------------------------------------------------------------------------------------------------------
+
+// Inversión de una cadena de texto:
+
+// Pide al usuario que ingrese una cadena de texto.
+// Utiliza un bucle for para recorrer la cadena de texto al revés.
+// Construye una nueva cadena que sea la inversa de la cadena original.
+// Muestra la cadena invertida en la consola.
+
+
+
+
+//-------------------------------------------------------------------------------------------------------
+
+// Contador de letras:
+
+// Pide al usuario que ingrese una palabra o frase.
+// Utiliza un bucle for para contar la cantidad de veces que aparece cada letra en la palabra o frase.
+// Muestra los resultados en la consola.
+
+
+
+
+//-------------------------------------------------------------------------------------------------------
+
+// Generador de secuencia numérica:
+
+// Pide al usuario que ingrese un número inicial y un número final.
+// Utiliza un bucle for para generar una secuencia numérica que vaya desde el número inicial hasta el número final.
+// Muestra la secuencia generada en la consola.
+
+
+
+
+//-------------------------------------------------------------------------------------------------------
