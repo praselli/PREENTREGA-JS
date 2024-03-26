@@ -132,7 +132,7 @@ const serieNumerica = [9, 23, 60, 4, 33, 27, 48, 50, 19, 7];
 const numerosPares = [];
 const numerosImpares = [];
 
-for (let i = 0; i <= serieNumerica.length; i++) {
+for (let i = 0; i < serieNumerica.length; i++) {
    
     if (serieNumerica[i] % 2 === 0) {
         numerosPares.push (serieNumerica[i]);
