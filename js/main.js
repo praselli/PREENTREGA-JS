@@ -71,10 +71,15 @@
 //     Divide la suma por la cantidad de números en el array para calcular el promedio.
 //     Muestra el promedio calculado en la consola.
 
-const calificaciones = [7, 6, 9, 5, 8, 6, 8,];
+const calificaciones = [7, 6, 9, 5, 8, 6, 8];
 
-const sumaCalificaciones = calificaciones.reduce((acc, item) => {
-    return prom = acc + item / ( calificaciones.length + 1 );
-});
+let sumaCalificaciones = 0; // Inicializa una variable para almacenar la suma de las calificaciones
 
-console.log (prom);
+// Bucle for que recorre cada elemento del array calificaciones
+for (let i = 0; i < calificaciones.length; i++) {
+    sumaCalificaciones = sumaCalificaciones + calificaciones[i]; // Suma el valor del elemento actual al acumulador de la suma
+}
+
+const promedio = sumaCalificaciones / calificaciones.length; // Calcula el promedio dividiendo la suma total por la cantidad de calificaciones
+
+console.log("El promedio de las calificaciones es: " + promedio); // Muestra el promedio calculado en la consola
