@@ -134,16 +134,16 @@ const numerosImpares = [];
 
 for (let i = 0; i <= serieNumerica.length; i++) {
    
-    if (i % 2 === 0) {
-        numerosPares.push (i);
+    if (serieNumerica[i] % 2 === 0) {
+        numerosPares.push (serieNumerica[i]);
         }
     else {
-        numerosImpares.push (i);
+        numerosImpares.push (serieNumerica[i]);
     }
     };
 
-console.log (numerosPares);
-console.log (numerosImpares);
+console.log ("numeros pares: " + numerosPares);
+console.log ("numeros impares: " + numerosImpares);
 
 //-------------------------------------------------------------------------------------------------------
 
