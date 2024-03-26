@@ -74,7 +74,7 @@
 const calificaciones = [7, 6, 9, 5, 8, 6, 8,];
 
 const sumaCalificaciones = calificaciones.reduce((acc, item) => {
-    return prom = acc + item / calificaciones.length;
+    return prom = acc + item / ( calificaciones.length + 1 );
 });
 
 console.log (prom);
