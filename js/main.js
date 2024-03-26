@@ -142,8 +142,8 @@ for (let i = 0; i < serieNumerica.length; i++) {
     }
     };
 
-console.log ("numeros pares: ", numerosPares);
-console.log ("numeros impares: ", numerosImpares);
+console.log (numerosPares);
+console.log (numerosImpares);
 
 const totalNumerosPares = numerosPares[i].reduce(function (a, b) {
     return a + b;
