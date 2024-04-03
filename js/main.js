@@ -160,7 +160,7 @@ function solicitarNumeros() {
 
   console.log (serieNumerica);
 
-  console.log(a);
+  console.log("El promedio de los números ingresados es: " + a.toFixed(2));
   
 
 
