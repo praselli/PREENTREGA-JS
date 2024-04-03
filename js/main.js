@@ -146,8 +146,6 @@ function solicitarNumeros() {
 
   solicitarNumeros();
 
-  console.log (serieNumerica);
-
   function ArrayAvg(serieNumerica) {
     let i = 0; summ = 0; ArrayLen = serieNumerica.length;
     while (i < ArrayLen) {
