@@ -118,79 +118,78 @@
 //     };
 
 
-//-------------------------------------------------------------------------------------------------------
+//---- [] ----- {} ----------------------------------------------------------------------------------------------
 
-// Suma de números pares e impares:
+// Calculadora de promedio:
+// Pide al usuario que ingrese una serie de números separados por comas.
+// Utiliza JavaScript para calcular el promedio de esos números.
+// Muestra el resultado en la consola.
 
-// Crea un array con una serie de números.
-// Utiliza un bucle for para recorrer cada número del array.
-// Calcula la suma de todos los números pares y la suma de todos los números impares por separado.
-// Muestra los resultados en la consola.
 
-const serieNumerica = [9, 23, 60, 4, 33, 27, 48, 50, 19, 7];
+const serieNumerica = [];
 
-const numerosPares = [];
-const numerosImpares = [];
-
-for (let i = 0; i < serieNumerica.length; i++) {
-   
-    if (serieNumerica[i] % 2 === 0) {
-        numerosPares.push (serieNumerica[i]);
+function solicitarNumeros() {
+    let continuar = true;
+    while (continuar) {
+      let numeroIngresado = parseInt(prompt(`Ingrese un número:
+  (O ingrese '0' para finalizar)`));
+      if (!isNaN(numeroIngresado)) {
+        if (numeroIngresado === 0) {
+          continuar = false;
+        } else {
+          serieNumerica.push(numeroIngresado);
         }
-    else {
-        numerosImpares.push (serieNumerica[i]);
+      } else {
+        alert("Por favor, ingrese un valor numérico válido.");
+      }
     }
-    };
+  };
 
-console.log (numerosPares);
-console.log (numerosImpares);
+  solicitarNumeros;
 
-// falta terminar!!!!!!!!!!
+  function ArrayAvg(serieNumerica) {
+    let i = 0; summ = 0; ArrayLen = serieNumerica.length;
+    while (i < ArrayLen) {
+      summ = summ + serieNumerica[i++];
+    }
+    return summ / ArrayLen;
+  }
 
+  let a = ArrayAvg(serieNumerica);
 
-//-------------------------------------------------------------------------------------------------------
+  console.log (serieNumerica);
 
-// Cálculo de la potencia de un número:
-
-// Pide al usuario que ingrese un número.
-// Utiliza un bucle for para calcular la potencia de ese número elevado a la potencia de los números del 1 al 10.
-// Muestra los resultados en la consola.
-
-
-
-
-//-------------------------------------------------------------------------------------------------------
-
-// Inversión de una cadena de texto:
-
-// Pide al usuario que ingrese una cadena de texto.
-// Utiliza un bucle for para recorrer la cadena de texto al revés.
-// Construye una nueva cadena que sea la inversa de la cadena original.
-// Muestra la cadena invertida en la consola.
-
+  console.log(a);
+  
 
 
 
 //-------------------------------------------------------------------------------------------------------
 
-// Contador de letras:
-
+// Contador de vocales:
 // Pide al usuario que ingrese una palabra o frase.
-// Utiliza un bucle for para contar la cantidad de veces que aparece cada letra en la palabra o frase.
+// Utiliza un bucle para contar cuántas veces aparece cada vocal (a, e, i, o, u) en la palabra o frase.
 // Muestra los resultados en la consola.
-
-
-
 
 //-------------------------------------------------------------------------------------------------------
 
-// Generador de secuencia numérica:
+// Generador de números aleatorios:
+// Pide al usuario que ingrese un número.
+// Utiliza un bucle para generar esa cantidad de números aleatorios entre 1 y 100.
+// Muestra los números aleatorios en la consola.
 
-// Pide al usuario que ingrese un número inicial y un número final.
-// Utiliza un bucle for para generar una secuencia numérica que vaya desde el número inicial hasta el número final.
-// Muestra la secuencia generada en la consola.
+//-------------------------------------------------------------------------------------------------------
 
+// Validador de contraseña:
+// Pide al usuario que ingrese una contraseña.
+// Utiliza JavaScript para verificar si la contraseña cumple con ciertos requisitos, como longitud mínima, uso de letras mayúsculas y minúsculas, y caracteres especiales.
+// Muestra un mensaje indicando si la contraseña es válida o no.
 
+//-------------------------------------------------------------------------------------------------------
 
+// Convertidor de temperatura:
+// Pide al usuario que ingrese una temperatura en grados Celsius.
+// Utiliza JavaScript para convertir esa temperatura a grados Fahrenheit.
+// Muestra el resultado en la consola.
 
 //-------------------------------------------------------------------------------------------------------
