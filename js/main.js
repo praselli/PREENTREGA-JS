@@ -125,7 +125,6 @@
 // Utiliza JavaScript para calcular el promedio de esos números.
 // Muestra el resultado en la consola.
 
-
 const serieNumerica = [];
 
 function solicitarNumeros() {
@@ -146,6 +145,8 @@ function solicitarNumeros() {
   };
 
   solicitarNumeros();
+
+  console.log (serieNumerica);
 
   function ArrayAvg(serieNumerica) {
     let i = 0; summ = 0; ArrayLen = serieNumerica.length;
