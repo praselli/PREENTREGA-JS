@@ -145,7 +145,7 @@ function solicitarNumeros() {
     }
   };
 
-  solicitarNumeros;
+  solicitarNumeros();
 
   function ArrayAvg(serieNumerica) {
     let i = 0; summ = 0; ArrayLen = serieNumerica.length;
