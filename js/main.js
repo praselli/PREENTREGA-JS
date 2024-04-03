@@ -170,13 +170,7 @@
 
 let palabraIngresada = toLoerCase( ompt ("Ingrese una palabra"));
 
-const vocales = {
-                a:0,
-                e:0,
-                i:0,
-                o:0,
-                u:0
-            };
+const vocales = { a:0, e:0,  i:0, o:0, u:0 };
 
 console.log(vocales);
 
