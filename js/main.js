@@ -118,77 +118,88 @@
 //     };
 
 
-//---- [] ----- {} ----------------------------------------------------------------------------------------------
+//---- [] ----- {} --------------------------------------------------------------------
 
 // Calculadora de promedio:
 // Pide al usuario que ingrese una serie de números separados por comas.
 // Utiliza JavaScript para calcular el promedio de esos números.
 // Muestra el resultado en la consola.
 
-const serieNumerica = [];
+// const serieNumerica = [];
 
-function solicitarNumeros() {
-    let continuar = true;
-    while (continuar) {
-      let numeroIngresado = parseInt(prompt(`Ingrese un número:
-  (O ingrese '0' para finalizar)`));
-      if (!isNaN(numeroIngresado)) {
-        if (numeroIngresado === 0) {
-          continuar = false;
-        } else {
-          serieNumerica.push(numeroIngresado);
-        }
-      } else {
-        alert("Por favor, ingrese un valor numérico válido.");
-      }
-    }
-  };
+// function solicitarNumeros() {
+//     let continuar = true;
+//     while (continuar) {
+//       let numeroIngresado = parseInt(prompt(`Ingrese un número:
+//   (O ingrese '0' para finalizar)`));
+//       if (!isNaN(numeroIngresado)) {
+//         if (numeroIngresado === 0) {
+//           continuar = false;
+//         } else {
+//           serieNumerica.push(numeroIngresado);
+//         }
+//       } else {
+//         alert("Por favor, ingrese un valor numérico válido.");
+//       }
+//     }
+//   };
 
-  solicitarNumeros();
+//   solicitarNumeros();
 
-  function ArrayAvg(serieNumerica) {
-    let i = 0; summ = 0; ArrayLen = serieNumerica.length;
-    while (i < ArrayLen) {
-      summ = summ + serieNumerica[i++];
-    }
-    return summ / ArrayLen;
-  }
+//   function ArrayAvg(serieNumerica) {
+//     let i = 0; summ = 0; ArrayLen = serieNumerica.length;
+//     while (i < ArrayLen) {
+//       summ = summ + serieNumerica[i++];
+//     }
+//     return summ / ArrayLen;
+//   }
 
-  let a = ArrayAvg(serieNumerica);
+//   let a = ArrayAvg(serieNumerica);
 
-  console.log (serieNumerica);
+//   console.log (serieNumerica);
 
-  console.log("El promedio de los números ingresados es: " + a.toFixed(2));
+//   console.log("El promedio de los números ingresados es: " + a.toFixed(2));
   
 
-
-
-//-------------------------------------------------------------------------------------------------------
+//---- [] ----- {} --------------------------------------------------------------------
 
 // Contador de vocales:
 // Pide al usuario que ingrese una palabra o frase.
 // Utiliza un bucle para contar cuántas veces aparece cada vocal (a, e, i, o, u) en la palabra o frase.
 // Muestra los resultados en la consola.
 
-//-------------------------------------------------------------------------------------------------------
+let palabraIngresada = toLoerCase( ompt ("Ingrese una palabra"));
+
+const vocales = {
+                "a":,
+                "e":,
+                "i":,
+                "o":,
+                "u":
+            };
+
+console.log(vocales);
+
+
+//---- [] ----- {} --------------------------------------------------------------------
 
 // Generador de números aleatorios:
 // Pide al usuario que ingrese un número.
 // Utiliza un bucle para generar esa cantidad de números aleatorios entre 1 y 100.
 // Muestra los números aleatorios en la consola.
 
-//-------------------------------------------------------------------------------------------------------
+//---- [] ----- {} --------------------------------------------------------------------
 
 // Validador de contraseña:
 // Pide al usuario que ingrese una contraseña.
 // Utiliza JavaScript para verificar si la contraseña cumple con ciertos requisitos, como longitud mínima, uso de letras mayúsculas y minúsculas, y caracteres especiales.
 // Muestra un mensaje indicando si la contraseña es válida o no.
 
-//-------------------------------------------------------------------------------------------------------
+//---- [] ----- {} --------------------------------------------------------------------
 
 // Convertidor de temperatura:
 // Pide al usuario que ingrese una temperatura en grados Celsius.
 // Utiliza JavaScript para convertir esa temperatura a grados Fahrenheit.
 // Muestra el resultado en la consola.
 
-//-------------------------------------------------------------------------------------------------------
+//---- [] ----- {} --------------------------------------------------------------------
