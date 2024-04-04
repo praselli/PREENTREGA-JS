@@ -176,7 +176,7 @@ for (let i = 0; i < palabraIngresada.length; i++) {
     let letra = palabraIngresada[i];
     if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
         vocales[letra]++;
-    };
+    }
 };
 
 console.log(vocales);
