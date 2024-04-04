@@ -193,12 +193,47 @@
 // Utiliza un bucle para generar esa cantidad de números aleatorios entre 1 y 100.
 // Muestra los números aleatorios en la consola.
 
-let numeroIngresado = parseInt(prompt("Ingrese un número entre 1 y 10:"));
+// let numeroIngresado = parseInt(prompt("Ingrese un número entre 1 y 10:"));
 
-for (let i = 0; i < numeroIngresado; i++) {
-    let numeroAleatorio = Math.floor(Math.random() * 100) + 1; // Math.floor rendondea hacia abajo a un número entero Ej: 2.5 => 2
-    console.log(numeroAleatorio);                              // Math.random crea un número aleatorio entre 0 y 1 (aunque 1 no esta incluído)
-}
+// for (let i = 0; i < numeroIngresado; i++) {
+//     let numeroAleatorio = Math.floor(Math.random() * 100) + 1; // Math.floor rendondea hacia abajo a un número entero Ej: 2.5 => 2
+//     console.log(numeroAleatorio);                              // Math.random crea un número aleatorio entre 0 y 1 (aunque 1 no esta incluído)
+// };
+
+let contraseniaIngresada = prompt("ingrese una nueva contraseña:").trim;
+
+const letrasMayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const letrasMinusculas = "abcdefghijklmnopqrstuvwxyz";
+const numeros = "0123456789";
+const simbolos = "!@#$%&-";
+
+for (let i = 0; i < contraseniaIngresada.length; i++) {
+    let caracter = contraseniaIngresada[i];
+   
+    if (caracter === letrasMayusculas[i]) {
+        console.log("Su contraseña tiene letas mayúsculas.");
+    } else {
+        console.log("Su contraseña no es segura. Agrege mayúsculas.")
+    }
+
+    if (caracter === letrasMinusculas[i]) {
+        console.log("Su contraseña tiene letas minúsculas.");
+    } else {
+        console.log("Su contraseña no es segura. Agrege minúsculas.")
+    }
+
+    if (caracter === numeros[i]) {
+        console.log("Su contraseña tiene letas números.");
+    } else {
+        console.log("Su contraseña no es segura. Agrege números.")
+    }
+
+    if (caracter === simbolos[i]) {
+        console.log("Su contraseña tiene letas símbolos.");
+    } else {
+        console.log("Su contraseña no es segura. Agrege símbolos.")
+    }
+};
 
 
 //---- [] ----- {} --------------------------------------------------------------------
