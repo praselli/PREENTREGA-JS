@@ -168,7 +168,7 @@
 // Utiliza un bucle para contar cuántas veces aparece cada vocal (a, e, i, o, u) en la palabra o frase.
 // Muestra los resultados en la consola.
 
-let palabraIngresada = palabraIngresada.toLowerCase(prompt("Ingrese una palabra"));
+const palabraIngresada = prompt("Ingrese una palabra").toLowerCase();
 
 const vocales = {"a":0, "e":0,  "i":0, "o":0, "u":0 };
 
