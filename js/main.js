@@ -173,9 +173,22 @@ let palabraIngresada = palabraIngresada.toLowerCase(prompt("Ingrese una palabra"
 const vocales = {"a":0, "e":0,  "i":0, "o":0, "u":0 };
 
 for (let i = 0; i < palabraIngresada.length; i++) {
-    console.log (i);
-    i === palabraIngresada[i] => palabraIngresada[i] ++;
-
+    if (i === palabraIngresada["a"]) {
+        palabraIngresada[i] ++;
+    }
+    if (i === palabraIngresada["e"]) {
+        palabraIngresada[i] ++;
+    }
+    if (i === palabraIngresada["i"]) {
+        palabraIngresada[i] ++;
+    }
+    if (i === palabraIngresada["o"]) {
+        palabraIngresada[i] ++;
+    }
+    if (i === palabraIngresada["u"]) {
+        palabraIngresada[i] ++;
+    }
+    else (console.log("No hay vocales en la palabra."))
 };
 
 console.log(vocales);
