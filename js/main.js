@@ -168,22 +168,22 @@
 // Utiliza un bucle para contar cuántas veces aparece cada vocal (a, e, i, o, u) en la palabra o frase.
 // Muestra los resultados en la consola.
 
-const palabraIngresada = prompt("Ingrese una palabra").toLowerCase();
+// const palabraIngresada = prompt("Ingrese una palabra").toLowerCase();
 
-const vocales = {"a":0, "e":0,  "i":0, "o":0, "u":0 };
+// const vocales = {"a":0, "e":0,  "i":0, "o":0, "u":0 };
 
-for (let i = 0; i < palabraIngresada.length; i++) {
-    let letra = palabraIngresada[i];
-    if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
-        vocales[letra]++;
-    }
-};
-console.log("Palabra ingresada: " + palabraIngresada);
-console.log("Cantidad de letras A: " + vocales.a);
-console.log("Cantidad de letras E: " + vocales.e);
-console.log("Cantidad de letras I: " + vocales.i);
-console.log("Cantidad de letras O: " + vocales.o);
-console.log("Cantidad de letras U: " + vocales.u);
+// for (let i = 0; i < palabraIngresada.length; i++) {
+//     let letra = palabraIngresada[i];
+//     if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+//         vocales[letra]++;
+//     }
+// };
+// console.log("Palabra ingresada: " + palabraIngresada);
+// console.log("Cantidad de letras A: " + vocales.a);
+// console.log("Cantidad de letras E: " + vocales.e);
+// console.log("Cantidad de letras I: " + vocales.i);
+// console.log("Cantidad de letras O: " + vocales.o);
+// console.log("Cantidad de letras U: " + vocales.u);
 
 
 //---- [] ----- {} --------------------------------------------------------------------
@@ -192,6 +192,14 @@ console.log("Cantidad de letras U: " + vocales.u);
 // Pide al usuario que ingrese un número.
 // Utiliza un bucle para generar esa cantidad de números aleatorios entre 1 y 100.
 // Muestra los números aleatorios en la consola.
+
+let numeroIngresado = parseInt(prompt("Ingrese un número entre 1 y 10:"));
+
+for (let i = 0; i < numeroIngresado; i++) {
+    let numeroAleatorio = Math.floor(Math.random() * 100) + 1; // Math.floor rendondea hacia abajo a un número entero Ej: 2.5 => 2
+    console.log(numeroAleatorio);                              // Math.random crea un número aleatorio entre 0 y 1 (aunque 1 no esta incluído)
+}
+
 
 //---- [] ----- {} --------------------------------------------------------------------
 
