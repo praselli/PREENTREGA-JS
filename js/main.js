@@ -178,8 +178,12 @@ for (let i = 0; i < palabraIngresada.length; i++) {
         vocales[letra]++;
     }
 };
-
-console.log(vocales);
+console.log("Palabra ingresada: " + palabraIngresada);
+console.log("Cantidad de letras A: " + vocales.a);
+console.log("Cantidad de letras E: " + vocales.e);
+console.log("Cantidad de letras I: " + vocales.i);
+console.log("Cantidad de letras O: " + vocales.o);
+console.log("Cantidad de letras U: " + vocales.u);
 
 
 //---- [] ----- {} --------------------------------------------------------------------
