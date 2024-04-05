@@ -212,6 +212,7 @@ let contraseniaIngresada = prompt("Ingrese una nueva contraseña:");
 
 // Validar longitud mínima de la contraseña
 if (contraseniaIngresada.length < 8) {
+    alert("La contraseña debe tener al menos 8 caracteres.");
     console.log("La contraseña debe tener al menos 8 caracteres.");
 } else {
     // Resto del código para verificar las demás condiciones
@@ -237,12 +238,14 @@ if (contraseniaIngresada.length < 8) {
         }
     }
 
+
     // Verificar si la contraseña cumple con los requisitos
     if (contieneMayuscula && contieneMinuscula && contieneNumero && contieneSimbolo) {
+        alert("¡La contraseña es válida!");
         console.log("¡La contraseña es válida!");
     } else {
+        alert("La contraseña no cumple con los requisitos mínimos.");
         console.log("La contraseña no cumple con los requisitos mínimos.");
-
     }
 };
 
