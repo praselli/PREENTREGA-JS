@@ -208,7 +208,6 @@
 // Utiliza JavaScript para verificar si la contraseña cumple con ciertos requisitos, como longitud mínima, uso de letras mayúsculas y minúsculas, y caracteres especiales.
 // Muestra un mensaje indicando si la contraseña es válida o no.
 
-
 let contraseniaIngresada = prompt("Ingrese una nueva contraseña:");
 
 // Validar longitud mínima de la contraseña
@@ -243,18 +242,9 @@ if (contraseniaIngresada.length < 8) {
         console.log("¡La contraseña es válida!");
     } else {
         console.log("La contraseña no cumple con los requisitos mínimos.");
+
     }
-}
-
-
-    // Verificar si la contraseña cumple con los requisitos
-    if (contieneMayuscula && contieneMinuscula && contieneNumero && contieneSimbolo) {
-        console.log("¡La contraseña es válida!");
-    } else {
-        console.log("La contraseña no cumple con los requisitos mínimos.");
-    }
-}
-
+};
 
 //---- [] ----- {} --------------------------------------------------------------------
 
