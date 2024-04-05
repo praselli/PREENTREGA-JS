@@ -200,41 +200,6 @@
 //     console.log(numeroAleatorio);                              // Math.random crea un número aleatorio entre 0 y 1 (aunque 1 no esta incluído)
 // };
 
-let contraseniaIngresada = prompt("ingrese una nueva contraseña:").trim;
-
-const letrasMayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-const letrasMinusculas = "abcdefghijklmnopqrstuvwxyz";
-const numeros = "0123456789";
-const simbolos = "!@#$%&-";
-
-for (let i = 0; i < contraseniaIngresada.length; i++) {
-    let caracter = contraseniaIngresada[i];
-   
-    if (caracter === letrasMayusculas[i]) {
-        console.log("Su contraseña tiene letas mayúsculas.");
-    } else {
-        console.log("Su contraseña no es segura. Agrege mayúsculas.")
-    }
-
-    if (caracter === letrasMinusculas[i]) {
-        console.log("Su contraseña tiene letas minúsculas.");
-    } else {
-        console.log("Su contraseña no es segura. Agrege minúsculas.")
-    }
-
-    if (caracter === numeros[i]) {
-        console.log("Su contraseña tiene letas números.");
-    } else {
-        console.log("Su contraseña no es segura. Agrege números.")
-    }
-
-    if (caracter === simbolos[i]) {
-        console.log("Su contraseña tiene letas símbolos.");
-    } else {
-        console.log("Su contraseña no es segura. Agrege símbolos.")
-    }
-};
-
 
 //---- [] ----- {} --------------------------------------------------------------------
 
@@ -242,6 +207,54 @@ for (let i = 0; i < contraseniaIngresada.length; i++) {
 // Pide al usuario que ingrese una contraseña.
 // Utiliza JavaScript para verificar si la contraseña cumple con ciertos requisitos, como longitud mínima, uso de letras mayúsculas y minúsculas, y caracteres especiales.
 // Muestra un mensaje indicando si la contraseña es válida o no.
+
+
+let contraseniaIngresada = prompt("Ingrese una nueva contraseña:");
+
+// Validar longitud mínima de la contraseña
+if (contraseniaIngresada.length < 8) {
+    console.log("La contraseña debe tener al menos 8 caracteres.");
+} else {
+    // Resto del código para verificar las demás condiciones
+    const letrasMayusculas = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    const letrasMinusculas = "abcdefghijklmnopqrstuvwxyz";
+    const numeros = "0123456789";
+    const simbolos = "!@#$%&-";
+
+    let contieneMayuscula = false;
+    let contieneMinuscula = false;
+    let contieneNumero = false;
+    let contieneSimbolo = false;
+
+    for (let caracter of contraseniaIngresada) {
+        if (letrasMayusculas.includes(caracter)) {
+            contieneMayuscula = true;
+        } else if (letrasMinusculas.includes(caracter)) {
+            contieneMinuscula = true;
+        } else if (numeros.includes(caracter)) {
+            contieneNumero = true;
+        } else if (simbolos.includes(caracter)) {
+            contieneSimbolo = true;
+        }
+    }
+
+    // Verificar si la contraseña cumple con los requisitos
+    if (contieneMayuscula && contieneMinuscula && contieneNumero && contieneSimbolo) {
+        console.log("¡La contraseña es válida!");
+    } else {
+        console.log("La contraseña no cumple con los requisitos mínimos.");
+    }
+}
+
+
+    // Verificar si la contraseña cumple con los requisitos
+    if (contieneMayuscula && contieneMinuscula && contieneNumero && contieneSimbolo) {
+        console.log("¡La contraseña es válida!");
+    } else {
+        console.log("La contraseña no cumple con los requisitos mínimos.");
+    }
+}
+
 
 //---- [] ----- {} --------------------------------------------------------------------
 
