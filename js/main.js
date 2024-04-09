@@ -285,18 +285,18 @@
 let temperaturaCelsius = parseInt(prompt(`Convertir Grados Celsius a Fahrenheit:
 Ingrese la temperatura que desea convertir:`));
 
-let temperaturtaFahrenheit = 0;
+let temperaturaFahrenheit = 0;
 
-function convertirtemperatura() {
-    temperaturtaFahrenheit = 32 + (temperaturaCelsius * 1.8);
-    return temperaturtaFahrenheit;
+function convertirTemperatura() {
+    temperaturaFahrenheit = 32 + (temperaturaCelsius * 1.8);
+    return temperaturaFahrenheit;
 }
 
-convertirtemperatura();
+convertirTemperatura();
 
-alert(temperaturaCelsius + "º Celsius" + " = " + temperaturtaFahrenheit + "º Fahrenheit");
+alert(temperaturaCelsius + "º Celsius" + " = " + temperaturaFahrenheit + "º Fahrenheit. Conversión completada.");
 
-console.log(temperaturaCelsius + "º Celsius" + " = " + temperaturtaFahrenheit + "º Fahrenheit");
+console.log(temperaturaCelsius + "º Celsius" + " = " + temperaturaFahrenheit + "º Fahrenheit");
 
 
 
