@@ -285,8 +285,10 @@
 let temperaturaCelsius = parseInt(prompt(`Convertir Grados Celsius a Fahrenheit:
 Ingrese la temperatura que desea convertir:`));
 
+let temperaturtaFahrenheit = 0;
+
 function convertirtemperatura() {
-    let temperaturtaFahrenheit = 32 + (temperaturaCelsius * 1.8);
+    temperaturtaFahrenheit = 32 + (temperaturaCelsius * 1.8);
     return temperaturtaFahrenheit;
 }
 
