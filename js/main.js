@@ -282,22 +282,89 @@
 
 // 9/5 = 1.8
 
-let temperaturaCelsius = parseInt(prompt(`Convertir Grados Celsius a Fahrenheit:
-Ingrese la temperatura que desea convertir:`));
+// let temperaturaCelsius = parseInt(prompt(`Convertir Grados Celsius a Fahrenheit:
+// Ingrese la temperatura que desea convertir:`));
 
-let temperaturaFahrenheit = 0;
+// let temperaturaFahrenheit = 0;
 
-function convertirTemperatura() {
-    temperaturaFahrenheit = 32 + (temperaturaCelsius * 1.8);
-    return temperaturaFahrenheit;
-}
+// function convertirTemperatura() {
+//     temperaturaFahrenheit = 32 + (temperaturaCelsius * 1.8);
+//     return temperaturaFahrenheit;
+// }
 
-convertirTemperatura();
+// convertirTemperatura();
 
-alert(temperaturaCelsius + "º Celsius" + " = " + temperaturaFahrenheit + "º Fahrenheit. Conversión completada.");
+// alert(temperaturaCelsius + "º Celsius" + " = " + temperaturaFahrenheit + "º Fahrenheit");
 
-console.log(temperaturaCelsius + "º Celsius" + " = " + temperaturaFahrenheit + "º Fahrenheit");
+// console.log(temperaturaCelsius + "º Celsius" + " = " + temperaturaFahrenheit + "º Fahrenheit");
 
 
 
-//---- [] ----- {} --------------------------------------------------------------------
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Suma de los dígitos de un número:
+// Pide al usuario que ingrese un número entero positivo y calcula la suma de todos 
+// sus dígitos.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Reverso de un número:
+// Solicita al usuario que ingrese un número entero y muestra su reverso.
+// Por ejemplo, si el usuario ingresa 123, deberías mostrar 321.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Contador de palabras:
+// Pide al usuario que ingrese una oración y cuenta cuántas palabras hay en ella.
+// Puedes asumir que las palabras están separadas por espacios en blanco.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Calculadora de factorial:
+// Solicita al usuario que ingrese un número entero positivo y calcula su factorial.
+// El factorial de un número entero positivo n se define como el producto de todos 
+// los números enteros positivos desde 1 hasta n.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Generador de secuencias Fibonacci:
+// Pide al usuario que ingrese un número entero positivo y genera los primeros n 
+// términos de la secuencia Fibonacci.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Juego de adivinanza:
+// Crea un juego donde el programa selecciona un número aleatorio entre 1 y 100, y el 
+// usuario tiene que adivinarlo. Después de cada intento del usuario, el programa 
+// debería decirle si el número a adivinar es mayor o menor que el número ingresado 
+// por el usuario.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Ordenamiento de una lista:
+// Pide al usuario que ingrese una lista de números separados por comas y luego ordénala
+// de menor a mayor.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
+
+// Contador de letras repetidas:
+// Solicita al usuario que ingrese una cadena de texto y cuenta cuántas veces aparece 
+// cada letra en ella. Muestra los resultados en orden alfabético.
+
+
+
+//---- [] ----- {} ------ `` -------------------------------------------------------------
